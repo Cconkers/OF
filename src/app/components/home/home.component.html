@@ -1,7 +1,33 @@
+<!-- Sección 1 titulo e imagen representativa -->
 <section class="section1">
   <h1>OF WEB DESIGN AND MARKETING</h1>
-  <img class="imagenTitulo" src="../../../assets/Digital-marketing-in-india.jpg" alt="Marketing Web">
-  <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=rubenpv011992@gmail.com,benrupv_13@hotmail.com&su=Informacion&body=Hola,%20me%20gustaria%20obtener%20informacion%20sobre%20la%20creación%20de%20una%20web"  target="_blank" >
-    <button class="actionButton" mat-raised-button color="primary">Comienza Ahora</button>
-  </a>
+  <img
+    class="imagenTitulo"
+    src="../../../assets/Digital-marketing-in-india.jpg"
+    alt="Marketing Web"
+  />
+  <app-actionButton></app-actionButton>
 </section>
+
+<!-- Sección 2 titulo y carrusel de ejemplos de clientes -->
+<section class="section2">
+  <h1>NUESTROS CLIENTES</h1>
+  <div class="sliderContainer">
+    <ng-image-slider class="slider" [imagePopup]="false" [imageSize]="{width: 300, height: 300, space: 10}" [images]="imgCollection" #nav></ng-image-slider>
+  </div>
+  <app-actionButton></app-actionButton>
+</section>
+
+<!-- Sección 3 tarjetas explicativas -->
+<section class="section3">
+<app-card></app-card>
+<app-actionButton></app-actionButton>
+</section>
+
+<footer>
+  <div class="linksFooter">
+    <a href="#">Contacto</a>
+    <a href="#">Privacidad</a>
+    <a href="#">Cookies</a>
+  </div>
+</footer>
